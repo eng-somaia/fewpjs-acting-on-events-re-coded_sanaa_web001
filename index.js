@@ -17,7 +17,7 @@ function moveDodgerRight() {
  var newPosition = dodger.style.left.replace("px", "");
     newPosition = parseInt(newPosition, 10);
  
-  if (newPosition > 0 && newPosition < 361) {
+  if (newPosition >= 0 && newPosition < 361) {
     dodger.style.left = `${newPosition + 1}px`;
   }
 }
