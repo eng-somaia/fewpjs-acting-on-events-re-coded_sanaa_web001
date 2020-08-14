@@ -12,12 +12,12 @@ document.addEventListener("keydown", function(e) {
     moveDodgerLeft();
   }
 });
-var newPosition = dodger.style.left.replace("px", "");
-    newPosition = parseInt(newPosition, 10);
+
 function moveDodgerRight() {
+ var newPosition = dodger.style.left.replace("px", "");
+    newPosition = parseInt(newPosition, 10);
  
- 
-  if (right > 0 || right < 405) {
+  if (newPosition > 0 || right < 405) {
     dodger.style.right = `${right - 1}px`;
   }
 }
